@@ -1,0 +1,6 @@
+score:12
+score:30
+score:56
+score:0
+score:27
+score:3

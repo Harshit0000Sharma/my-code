@@ -1,0 +1,9 @@
+{
+    "editor.mouseWheelZoom": true,
+    "debug.terminal.clearBeforeReusing": true,
+    "files.autoSave": "afterDelay",
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.runInTerminal": true
+}

@@ -1,0 +1,10 @@
+world_visiting_place=['norway','germany','singapore','maldives','berlin']
+print(world_visiting_place)
+print(sorted(world_visiting_place))
+print(world_visiting_place)
+world_visiting_place.reverse()
+print(world_visiting_place)
+world_visiting_place.sort()
+print(world_visiting_place)
+world_visiting_place.sort(reverse=True)
+print(world_visiting_place)

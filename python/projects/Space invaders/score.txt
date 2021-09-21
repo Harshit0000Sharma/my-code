@@ -1,0 +1,4 @@
+score:12
+score:30
+score:56
+score:38
