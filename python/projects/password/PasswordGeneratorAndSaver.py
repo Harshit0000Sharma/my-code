@@ -7,7 +7,6 @@ class Password():
         # this can be changed to suit your password length
         MAX_LEN = 12
 
-        # declare arrays of the character that we need in out password
         # Represented as chars to enable easy string concatenation
         DIGITS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
         LOWCASE_CHARACTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
@@ -22,7 +21,6 @@ class Password():
 
         SYMBOLS = ['@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>',
                    '*', '(', ')', '<']
-        # combines all the character arrays above to form one array
         COMBINED_LIST = DIGITS + UPPERCASE_CHARACTERS + LOWCASE_CHARACTERS + SYMBOLS
 
         # randomly select at least one character from each character set above
@@ -40,5 +38,32 @@ class Password():
             password = random.choice(COMBINED_LIST)
             print(password, end="")
 
+        choice1 = input("\ndo you want to save this password(y/n): ")
+        choice1 = choice1.lower()
+        if choice1 == "y":
+            choice2 = input("which account password is this")
+            with open("password.txt", "a") as f:
+                f.write(f"account : {choice2} | password:{password}\n")
+        elif choice1 == "n":
+            print("okk we will not save your password")
+        else:
+            print("invalid choice")
 
-Password.PasswordGenerate()
+    def PasswordSave():
+        account = input(f"{name} which account password you want to save :")
+        password = input(f"what is the password: ")
+        with open("password.txt", "a") as f:
+            f.write(f"account : {account} | password:{password}\n")
+
+
+name = input("enter your name: ")
+choice = input(
+    f"ok {name} do you want to a generate (g)new password or save a new password(s): ")
+choice = str(choice)
+choice = choice.lower()
+if choice == "g":
+    Password.PasswordGenerate()
+elif choice == "s":
+    Password.PasswordSave()
+else:
+    print("invalid choice")
