@@ -1,0 +1,12 @@
+console.log(console)
+console.log("hello")
+console.info("bye")
+console.error("an unexpected error occurred")
+console.warn("an error is expected")
+console.assert(5 > 555)
+console.assert(555 > 5)
+// console.clear()
+obj = { a: 1, b: 2, c: 3, d: 4 }
+console.table(obj)
+console.time("p1")
+console.timeEnd("p1")
