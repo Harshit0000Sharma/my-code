@@ -1,20 +1,21 @@
-* Element selector */
-        p{
-            border: 2px solid red;
-        }
-        
-        /* Id selector */
-        #firstPara{
-            color: green;
-        }
+/* Element selector */
+p {
+    border: 2px solid red;
+}
 
-        /* Class selector */
-        .bgBlue{
-            color: yellow;
-            background-color: blue;
-        }
+/* Id selector */
+#firstPara {
+    color: green;
+}
 
-        /* Grouping selector */
-        footer, span{
-            background-color: pink; 
-        }
+/* Class selector */
+.bgBlue {
+    color: yellow;
+    background-color: blue;
+}
+
+/* Grouping selector */
+footer,
+span {
+    background-color: pink;
+}
