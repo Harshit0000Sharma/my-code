@@ -1,4 +1,5 @@
-
-p{
-       backgroundColor: black;
+/* external css */
+p {
+    background: black;
+    font-size: 12px;
 }
